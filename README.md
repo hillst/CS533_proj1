@@ -48,17 +48,3 @@ The output format could be two n × H-dimensional matrices, one for the non-stat
 function (column i gives the value function with i steps-to-go) and one for the policy (column i
 gives the policy for i steps-to-go)
 
-## States
-Nothing more than just a value in some range for looking up in our transition table. There is a state class but it doesnt do 
-anything right now.
-
-## Actions
-Actions just represent a different index in our transition table
-
-## Rewards
-State => Reward. That simple.
-
-## Transition
-A simple action + state => new state function. Right now we are just working from tuples of things so it isnt anything 
-more complicated than a bunch of integers getting passed around, in future projects it may be desirable to abstract this another level. 
-It isnt done yet but maybe if I get bored in class or something I can do that.
