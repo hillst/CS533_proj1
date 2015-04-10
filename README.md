@@ -1,4 +1,17 @@
 # CS533_proj1
+To run the program use the following arguments:
+Usage: Simulator.py <MDP.txt>   <RandomPolicy|OptimalPolicy>    <Horizon>
+
+The MDP.txt file is described in the below section. Select the policy to run, either a random policy or the ValueIterationPolicy (called OptimalPolicy here). The horizon is how many time steps until the policy terminates. The Value iteration policy is non-stationary.
+
+MonroeMDP example:
+python Simulator.py MonroeMDP.txt OptimalPolicy 10
+
+
+The output is two H x n tables. The first represents the optimal policy, and the second is the value function. These are comma separated and include a label row and column (H to go in the first row and State number in the first column). The i'th column is the value of each state with i-steps-to-go
+
+
+## HW Instructions
 CS533 MDP planner
 
 The input format for the MDP should be a text file with the following format:
